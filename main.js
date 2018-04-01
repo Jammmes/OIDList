@@ -61,6 +61,12 @@ PRINTERS:
 1.3.6.1.2.1.43.31 - finSupply (Finisher supply group)
 1.3.6.1.2.1.43.31 - finSupplyMediaInput (Finisher supply, media input group)
 1.3.6.1.2.1.43.32 - finDeviceAttribute (Finisher device attribute group)
+//
+1.3.6.1.2.1.25.3.5.1.1 - hrPrinterStatus (The current status of this printer device)
+1.3.6.1.2.1.25.3.5.1.2 - hrPrinterDetectedErrorState (This object represents any error conditions detected
+by the printer)
+
+
 
 UPC:
 1.3.6.1.2.1.33.1 - upsObjects (Objects)
