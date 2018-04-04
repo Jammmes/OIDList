@@ -30,25 +30,19 @@ var routers = [
 
 
 var switches = [
-    ['1.3.6.1.2.1.17.0', 'dot1dNotifications', 'Notifications'],
-    ['1.3.6.1.2.1.17.1', 'dot1dBase', '"dot1dBase" group'],
-    ['1.3.6.1.2.1.17.2', 'dot1dStp', '"dot1dStp" group'],
-    ['1.3.6.1.2.1.17.3', 'dot1dSr', '"dot1dSr" group'],
-    ['1.3.6.1.2.1.17.4', 'dot1dTp', '"dot1dTp" group'],
-    ['1.3.6.1.2.1.17.5', 'dot1dStatic', '"dot1dStatic" group'],
-    ['1.3.6.1.2.1.17.6', 'pBridgeMIB', 'The Bridge MIB Extension module'],
-    ['1.3.6.1.2.1.17.7', 'qBridgeMIB', 'The VLAN Bridge MIB module'],
-    ['1.3.6.1.2.1.17.8', 'dot1dConformance', 'Conformance'],
-    ['1.3.6.1.2.1.17.10', 'dot1dPortPair', '"dot1dPortPair" group']
+    ['1.3.6.1.2.1.17.1.1', 'dot1dBaseBridgeAddress', 'The MAC address used by this bridge when it must be referred to in a unique fashion '],
+    ['1.3.6.1.2.1.17.1.4', 'dot1dBasePortTable', 'A table that contains generic information about every port that is associated with this bridge '],
+    ['1.3.6.1.2.1.17.4.3', 'dot1dTpFdbTable', 'A table that contains information about unicast entries for which the bridge has forwarding and / or filtering information '],
+    ['1.3.6.1.2.1.17.2.15', 'dot1dStpPortTable', 'A table that contains port-specific information for the Spanning Tree Protocol '],
+
 ]
 var hosts = [
     ['1.3.6.1.2.1.25.1', 'hrSystem', 'System'],
-    ['1.3.6.1.2.1.25.2', 'hrStorage', 'Storage'],
-    ['1.3.6.1.2.1.25.3', 'hrDevice', 'Host resources device'],
-    ['1.3.6.1.2.1.25.4', 'hrSWRun', 'Host resources software run'],
-    ['1.3.6.1.2.1.25.5', 'hrSWRunPerf', 'Host resources software run performance'],
-    ['1.3.6.1.2.1.25.6', 'hrSWInstalled', 'Host resources software installed'],
-    ['1.3.6.1.2.1.25.7', 'hrMIBAdminInfo', 'Admin info']
+    ['1.3.6.1.2.1.25.1.1', 'hrSystemUptime', 'The amount of time since this host was last initialized'],
+    ['1.3.6.1.2.1.25.1.2', 'hrSystemDate', 'The hosts notion of the local date and time of day'],
+    ['1.3.6.1.2.1.25.2.3', 'hrStorageTable', 'The (conceptual) table of logical storage areas on the host'],
+    ['1.3.6.1.2.1.25.3.2', 'hrDeviceEntry', 'The (conceptual) table of devices contained by the host'],
+    ['1.3.6.1.2.1.25.3.3', 'hrProcessorTable', 'The (conceptual) table of processors contained by the host']
 ]
 
 var ups = [
@@ -410,4 +404,4 @@ var printers = [
 
 
 
-console.log(createList('printers', printers));
+console.log(createList('h', hosts));

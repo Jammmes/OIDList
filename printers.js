@@ -1,11 +1,19 @@
 var printers = [{
+    oid: "1.3.6.1.2.1.25.3.5.1.1",
+    name: "hrPrinterStatus",
+    descr: "The current status of this printer device"
+}, {
+    oid: "1.3.6.1.2.1.25.3.5.1.2",
+    name: "hrPrinterDetectedErrorState",
+    descr: "This object represents any error conditions detected by the printer"
+}, {
     oid: "1.3.6.1.2.1.43.2.2.1",
     name: "prtGeneralGroup",
     descr: "The general printer group"
 }, {
     oid: "1.3.6.1.2.1.43.2.2.2",
     name: "prtResponsiblePartyGroup",
-    descr: "The responsible party group contains contact information for humans responsible for the printer "
+    descr: "The responsible party group contains contact information for humans responsible for the printer"
 }, {
     oid: "1.3.6.1.2.1.43.2.2.3",
     name: "prtInputGroup",
