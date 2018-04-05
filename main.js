@@ -399,9 +399,8 @@ var printers = [
     ['1.3.6.1.2.1.43.33.1.1.2', 'finDeviceAttributeInstanceIndex', 'An index that allows the discrimination of an attribute instance when the same attribute occurs multiple times for a specific instance of a finisher function'],
     ['1.3.6.1.2.1.43.33.1.1.3', 'finDeviceAttributeValueAsInteger', 'Defines the integer value of the attribute'],
     ['1.3.6.1.2.1.43.33.1.1.4', 'finDeviceAttributeValueAsOctets', 'Contains the octet string value of the attribute']
-
 ]
 
 
 
-console.log(createList('h', hosts));
+//console.log(createList('h', hosts));
