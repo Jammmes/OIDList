@@ -1,4 +1,4 @@
-// app/progr.js
+// app/cli.js
 var arg = require('commander')
 var calc = require('./calc')
 
@@ -11,6 +11,7 @@ var numbersToAdd = [
 
 arg
     .option('-t, --text', 'text output')
+    .option('-f, --fck', 'text output')
     .parse(process.argv);
 
 var result = calc.sum(numbersToAdd)

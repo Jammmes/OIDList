@@ -1,2 +1,2 @@
 // index.js
-require('./app/progr');
+require('./app/cli');
