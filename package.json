@@ -1,15 +1,18 @@
 {
-    "name": "oid",
-    "version": "1.0.0",
+    "name": "oids",
+    "version": "1.0.1",
     "description": "test cli",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js"
+        "start": "index.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
         "commander": "^2.15.1"
+    },
+    "bin": {
+        "cli": "index.js"
     }
 }
